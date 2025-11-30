@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartWatch Pro - Advanced Fitness Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">SmartWatch Pro</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#specs">Specs</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#" class="cart-icon" id="cartBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M9 2L7 8H21L19 2H9Z" stroke-width="2"/>
+                        <path d="M7 8L5 22H19L21 8" stroke-width="2"/>
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">SmartWatch Pro</h1>
+                <p class="hero-subtitle">The ultimate companion for your active lifestyle</p>
+                <div class="hero-features">
+                    <span>💓 Heart Rate Monitor</span>
+                    <span>🏃 Activity Tracking</span>
+                    <span>💧 Water Resistant</span>
+                    <span>🔋 7-Day Battery</span>
+                </div>
+                <div class="price-section">
+                    <span class="original-price" data-price="11000">DZD 11,000</span>
+                    <span class="current-price" data-price="9000">DZD 9,000</span>
+                    <span class="discount-badge">18% OFF</span>
+                </div>
+                <div class="color-selector">
+                    <span class="color-label">Color:</span>
+                    <button class="color-option active" data-color="black" style="background: #1a1a1a;"></button>
+                    <button class="color-option" data-color="silver" style="background: #c0c0c0;"></button>
+                    <button class="color-option" data-color="blue" style="background: #0066cc;"></button>
+                    <button class="color-option" data-color="rose" style="background: #e6a8a8;"></button>
+                </div>
+                <button class="cta-button" id="addToCartBtn">Add to Cart</button>
+            </div>
+            <div class="hero-image">
+                <div class="watch-display">
+                    <div class="watch-frame">
+                        <div class="watch-screen">
+                            <div class="time">10:30</div>
+                            <div class="stats">
+                                <div>💓 72 BPM</div>
+                                <div>🏃 8,542 steps</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="watch-strap"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Premium Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💓</div>
+                    <h3>Heart Rate Monitor</h3>
+                    <p>24/7 continuous heart rate tracking with advanced sensors for accurate health monitoring</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏃</div>
+                    <h3>Activity Tracking</h3>
+                    <p>Track running, cycling, swimming, and 50+ sports modes with GPS precision</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💧</div>
+                    <h3>Water Resistant</h3>
+                    <p>5ATM water resistance - perfect for swimming and water sports activities</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔋</div>
+                    <h3>Long Battery Life</h3>
+                    <p>Up to 7 days of battery life on a single charge with fast charging support</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Smart Notifications</h3>
+                    <p>Receive calls, messages, and app notifications directly on your wrist</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">😴</div>
+                    <h3>Sleep Tracking</h3>
+                    <p>Monitor sleep quality with detailed insights into sleep stages and patterns</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specs Section -->
+    <section id="specs" class="specs">
+        <div class="container">
+            <h2 class="section-title">Technical Specifications</h2>
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <span class="spec-label">Display</span>
+                    <span class="spec-value">1.4" AMOLED Touchscreen</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Resolution</span>
+                    <span class="spec-value">454 x 454 pixels</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Processor</span>
+                    <span class="spec-value">Dual-core 1.2GHz</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Storage</span>
+                    <span class="spec-value">8GB Internal</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Connectivity</span>
+                    <span class="spec-value">Bluetooth 5.0, WiFi, GPS</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Compatibility</span>
+                    <span class="spec-value">iOS 12+ / Android 6.0+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Best smartwatch I've ever owned! The battery life is incredible and the fitness tracking is super accurate."</p>
+                    <p class="review-author">- حمزة</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Love the sleek design and all the features. The heart rate monitor is very precise and the sleep tracking helps me improve my rest."</p>
+                    <p class="review-author">- أمينة</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Perfect for my active lifestyle. Water resistance is great for swimming, and I love receiving notifications on my wrist."</p>
+                    <p class="review-author">- ياسمين</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SmartWatch Pro. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">DZD 0.00</span>
+            </div>
+            <button class="checkout-button" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
