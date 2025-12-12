@@ -45,6 +45,14 @@ addToCartBtn.addEventListener('click', () => {
     
     cart.push(product);
     updateCart();
+    updateCart();
+    
+    // Animate cart icon
+    cartBtn.classList.add('animate-pop');
+    setTimeout(() => {
+        cartBtn.classList.remove('animate-pop');
+    }, 400);
+
     showNotification('Added to cart!');
     
     // Button animation

@@ -1,0 +1,54 @@
+
+/* -------------------------------------------------------------------------- */
+/*                           New Premium Animations                           */
+/* -------------------------------------------------------------------------- */
+
+/* 1. Pulse Animation */
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(79, 70, 229, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+    }
+}
+
+/* 2. Hero Background Movement */
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* 3. Staggered Grid Entries */
+/* These will work when the elements become visible */
+.feature-card:nth-child(2), .review-card:nth-child(2), .spec-item:nth-child(2) { transition-delay: 0.1s !important; }
+.feature-card:nth-child(3), .review-card:nth-child(3), .spec-item:nth-child(3) { transition-delay: 0.2s !important; }
+.feature-card:nth-child(4), .review-card:nth-child(4), .spec-item:nth-child(4) { transition-delay: 0.3s !important; }
+.feature-card:nth-child(5), .review-card:nth-child(5), .spec-item:nth-child(5) { transition-delay: 0.4s !important; }
+.feature-card:nth-child(6), .review-card:nth-child(6), .spec-item:nth-child(6) { transition-delay: 0.5s !important; }
+
+/* 4. Cart Pop Animation */
+@keyframes cart-pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4); color: var(--accent-color); }
+    100% { transform: scale(1); }
+}
+
+.cart-icon.animate-pop {
+    animation: cart-pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* 5. Micro-interactions */
+.color-option:active {
+    transform: scale(0.9);
+}
